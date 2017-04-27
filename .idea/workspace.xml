@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="17404cec-5d40-4ea5-9fb8-ebe5ffe54041" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/sdsu/cs/Main.java" afterPath="$PROJECT_DIR$/src/edu/sdsu/cs/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/sdsu/cs/Player.java" afterPath="$PROJECT_DIR$/src/edu/sdsu/cs/Player.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +21,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/sdsu/cs/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="814">
-              <caret line="57" column="45" lean-forward="true" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
+            <state relative-caret-position="714">
+              <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,6 +99,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <push-targets>
+      <push-target-info repo="$PROJECT_DIR$" source="master" target-remote="origin" target-branch="dev" />
+    </push-targets>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -429,6 +430,14 @@
       <option name="presentableId" value="Default" />
       <updated>1492913980123</updated>
     </task>
+    <task id="LOCAL-00001" summary="Sorted Positions into 13 positions.">
+      <created>1493320372241</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1493320372241</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -496,6 +505,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Sorted Positions into 13 positions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Sorted Positions into 13 positions." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -791,8 +804,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/sdsu/cs/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="57" column="45" lean-forward="true" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
+        <state relative-caret-position="714">
+          <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
