@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17404cec-5d40-4ea5-9fb8-ebe5ffe54041" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CS496FinalProject/edu/sdsu/cs/Main.class" afterPath="$PROJECT_DIR$/out/production/CS496FinalProject/edu/sdsu/cs/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CS496FinalProject/edu/sdsu/cs/Player.class" afterPath="$PROJECT_DIR$/out/production/CS496FinalProject/edu/sdsu/cs/Player.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,7 +101,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <push-targets>
-      <push-target-info repo="$PROJECT_DIR$" source="master" target-remote="origin" target-branch="dev" />
+      <push-target-info repo="$PROJECT_DIR$" source="master" target-remote="origin" target-branch="master" />
     </push-targets>
   </component>
   <component name="GradleLocalSettings">
@@ -437,7 +438,21 @@
       <option name="project" value="LOCAL" />
       <updated>1493320372241</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Sorted Positions into 13 positions.">
+      <created>1493320417385</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1493320417385</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Sorted Positions into 13 positions.">
+      <created>1493320452139</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1493320452139</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
