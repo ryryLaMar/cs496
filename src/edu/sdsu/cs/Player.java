@@ -1,16 +1,19 @@
 package edu.sdsu.cs;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by rlama on 4/24/2017.
  */
 public class Player {
     String name = "";
     String nationality = "";
-    String postion = "";
+    String position = "";
     String preferredFoot;
-    int overallRating = 0;
-    int age = 0;
-    int ballControl = 0;
+    int overallRating;
+    int age;
+    int ballControl;
     int dribbling;
     int marking;
     int slideTackling;
@@ -45,9 +48,8 @@ public class Player {
     int gkHandling;
     int gkReflexes;
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    public void setName(String name) {this.name = name;}
+    public String getName(){ return name;}
 
     public String getNationality() {
         return nationality;
@@ -57,12 +59,12 @@ public class Player {
         this.nationality = nationality;
     }
 
-    public String getPostion() {
-        return postion;
+    public String getPosition() {
+        return position;
     }
 
-    public void setPostion(String postion) {
-        this.postion = postion;
+    public void setPostion(String position) {
+        this.position = position;
     }
 
     public String getPreferredFoot() {
@@ -367,7 +369,9 @@ public class Player {
                   int longPass, int acceleration, int speed, int stamina, int strength, int balance, int agility,
                   int jumping, int heading, int shotPower, int finishing, int longShots, int curve, int freekickAccuracy,
                   int penalties, int volley, int gkPositioning, int gkDiving, int gkKicking, int gkHandling, int gkReflexes) {
+
         this.name = name;
+        this.position = position;
         this.nationality = nation;
         this.preferredFoot = foot;
         this.overallRating = overallRating;
@@ -406,6 +410,7 @@ public class Player {
         this.gkKicking = gkKicking;
         this.gkHandling = gkHandling;
         this.gkReflexes = gkReflexes;
+
     }
     public Player(){}
     public Player makePlayer(String[] currentPlayer){
@@ -449,12 +454,36 @@ public class Player {
         int gkKicking=Integer.parseInt(currentPlayer[50]);
         int gkHandling=Integer.parseInt(currentPlayer[51]);
         int gkReflexes=Integer.parseInt(currentPlayer[52]);
-        return new Player(name,nationality, position, preferredFoot,overallRating
+        return new Player(name,nationality, preferredFoot, position,overallRating
                 , age, ballControl, dribbling, marking, slideTackling, standingTackle,
                 aggression, reactions, attacking_position, interceptions, vision,
                 composure, crossing, shortPass, longPass, acceleration, speed, stamina,
                 strength, balance, agility, jumping, heading, shotPower, finishing,
                 longShots, curve, freekickAccuracy, penalties, volley, gkPositioning,
                 gkDiving, gkKicking, gkHandling, gkReflexes);
+
+    }
+    public Integer getAttribute(String att){
+        // todo finish this map
+        Map<String, Integer> playerAttributes = new HashMap<>();
+        playerAttributes.put("speed", getSpeed()); playerAttributes.put("interceptions", getInterceptions());
+        playerAttributes.put("agility", getAgility()); playerAttributes.put("vision", getVision());
+        playerAttributes.put("overall rating", getOverallRating()); playerAttributes.put("composure", getComposure());
+        playerAttributes.put("age", getAge()); playerAttributes.put("crossing", getCrossing());
+        playerAttributes.put("ball Control", getBallControl()); playerAttributes.put("short pass", getShortPass());
+        playerAttributes.put("dribbling", getDribbling()); playerAttributes.put("long pass", getLongPass());
+        playerAttributes.put("marking", getMarking()); playerAttributes.put("acceleration", getAcceleration());
+        playerAttributes.put("slide tackling", getSlideTackling()); playerAttributes.put("stamina", getStamina());
+        playerAttributes.put("standing tackle", getStandingTackle()); playerAttributes.put("strength", getStrength());
+        playerAttributes.put("aggression", getAggression()); playerAttributes.put("balance", getBalance());
+        playerAttributes.put("reactions", getReactions()); playerAttributes.put("jumping", getJumping());
+        playerAttributes.put("attacking position", getAttacking_position()); playerAttributes.put("heading", getHeading());
+        playerAttributes.put("shot power", getShotPower()); playerAttributes.put("finishing", getFinishing());
+        playerAttributes.put("long shots", getLongShots()); playerAttributes.put("curve", getCurve());
+        playerAttributes.put("freekick accuracy", getFreekickAccuracy()); playerAttributes.put("penalties", getPenalties());
+        playerAttributes.put("volley", getVolley()); playerAttributes.put("gk positioning", getGkPositioning());
+        playerAttributes.put("gk diving", getGkDiving()); playerAttributes.put("gk kicking", getGkKicking());
+        playerAttributes.put("gk handling", getGkHandling()); playerAttributes.put("gk reflexes", getGkReflexes());
+        return playerAttributes.get(att);
     }
 }
