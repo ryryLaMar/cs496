@@ -10,7 +10,7 @@ import java.util.List;
 public class Team {
     private String filename;
 
-    /**
+    /***
      * Purpose of Team class is for writing the resulting output to a file.
      * Takes in the list of Players for each position
      * String a is for attribute

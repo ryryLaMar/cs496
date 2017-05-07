@@ -3,7 +3,7 @@ package edu.sdsu.cs;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
+/***
  * Player Class makes each line in the CSV file a Player with fields being the players ratings for their attributes
  * name, nationality, position, and preferred foot won't be used for comparison. They will be used for
  * providing a detailed description of the player when producing output

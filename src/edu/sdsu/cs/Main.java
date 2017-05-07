@@ -5,7 +5,6 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Check if there is any argument
         try {
             String attribute = args[0];
             String filename = args[1];
@@ -14,32 +13,19 @@ public class Main {
             List<Player> players = new ArrayList<>();
             List<List<Player>> playersByPosition = new ArrayList<>();
             Team bestTeamByAttribute = new Team(filename);
-            List<Player> RS = new ArrayList<>();
-            playersByPosition.add(RS);
-            List<Player> LS = new ArrayList<>();
-            playersByPosition.add(LS);
-            List<Player> RCM = new ArrayList<>();
-            playersByPosition.add(RCM);
-            List<Player> CAM = new ArrayList<>();
-            playersByPosition.add(CAM);
-            List<Player> LCM = new ArrayList<>();
-            playersByPosition.add(LCM);
-            List<Player> RWB = new ArrayList<>();
-            playersByPosition.add(RWB);
-            List<Player> RCB = new ArrayList<>();
-            playersByPosition.add(RCB);
-            List<Player> CB = new ArrayList<>();
-            playersByPosition.add(CB);
-            List<Player> LCB = new ArrayList<>();
-            playersByPosition.add(LCB);
-            List<Player> LWB = new ArrayList<>();
-            playersByPosition.add(LWB);
-            List<Player> GK = new ArrayList<>();
-            playersByPosition.add(GK);
-            List<Player> SUB = new ArrayList<>();
-            playersByPosition.add(SUB);
-            List<Player> RES = new ArrayList<>();
-            playersByPosition.add(RES);
+            List<Player> RS = new ArrayList<>();playersByPosition.add(RS);
+            List<Player> LS = new ArrayList<>();playersByPosition.add(LS);
+            List<Player> RCM = new ArrayList<>();playersByPosition.add(RCM);
+            List<Player> CAM = new ArrayList<>();playersByPosition.add(CAM);
+            List<Player> LCM = new ArrayList<>();playersByPosition.add(LCM);
+            List<Player> RWB = new ArrayList<>();playersByPosition.add(RWB);
+            List<Player> RCB = new ArrayList<>();playersByPosition.add(RCB);
+            List<Player> CB = new ArrayList<>();playersByPosition.add(CB);
+            List<Player> LCB = new ArrayList<>();playersByPosition.add(LCB);
+            List<Player> LWB = new ArrayList<>();playersByPosition.add(LWB);
+            List<Player> GK = new ArrayList<>();playersByPosition.add(GK);
+            List<Player> SUB = new ArrayList<>();playersByPosition.add(SUB);
+            List<Player> RES = new ArrayList<>();playersByPosition.add(RES);
             for (String[] line : rawData) {
                 line[5] = line[5].toUpperCase();
                 if (line[5].equals("LB")||line[5].equals("LCB")) {
@@ -85,11 +71,6 @@ public class Main {
                 }
 
 
-            }
-            for(List p : playersByPosition){
-                if(p.isEmpty()){
-                    System.out.println("list is empty");
-                }
             }
             bestTeamByAttribute.printBestTeam(playersByPosition, attribute);
         } catch (Exception e) {
