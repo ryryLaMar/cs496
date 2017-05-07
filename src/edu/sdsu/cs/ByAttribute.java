@@ -11,6 +11,11 @@ public class ByAttribute implements Comparator<Player> {
         return p1.getAttribute(att).compareTo(p2.getAttribute(att));
     }
   //  public String[] fastestPlayer();
+
+    /**
+     * This Constructor is so it's possible to pass into the Comparator the Attribute the user wants to compare
+     * @param attribute
+     */
   public ByAttribute(String attribute){
        att = attribute;
   }
