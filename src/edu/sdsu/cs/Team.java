@@ -26,12 +26,12 @@ public class Team {
         {
             List<Player> positions = position;
             Collections.sort(position, new ByAttribute(a));
-            bw.write("Postion: ");
-            bw.write(positions.get(position.size() - 1).getPosition() + "   ");
+            bw.write("Position: ");
+            bw.write(String.format("%-25s",positions.get(position.size() - 1).getPosition()));
             bw.write("Name: ");
-            bw.write(positions.get(position.size() - 1).getName() + "   ");
+            bw.write(String.format("%-26s",positions.get(position.size() - 1).getName()));
             bw.write("Country of Origin: ");
-            bw.write(positions.get(position.size() - 1).getNationality());
+            bw.write(String.format("%-20s",positions.get(position.size() - 1).getNationality()));
             bw.newLine();
         }
         bw.flush();
@@ -46,10 +46,6 @@ public class Team {
     public Team(String f) {
         filename = f;
     }
-    private String formatOutput(List<Player> players){
-
-    }
-
 }
 
 
