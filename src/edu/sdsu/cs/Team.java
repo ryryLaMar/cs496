@@ -22,7 +22,7 @@ public class Team {
     public void printBestTeam(List<List<Player>> p, String a) {
         try {
             BufferedWriter bw = new BufferedWriter(new FileWriter(new File(filename)));
-            bw.write("Here's the players sorted by " + a);
+            bw.write("Here's the players sorted by " + a.substring(0, 1).toUpperCase() + a.substring(1) + ": ");
             bw.newLine();
             bw.newLine();
             for(List position: p)

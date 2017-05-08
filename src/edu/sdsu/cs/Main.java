@@ -6,7 +6,7 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         try {
-            String attribute = args[0];
+            String attribute = args[0].toLowerCase();
             String filename = args[1];
             CSVReader readFile = new CSVReader();
             ArrayList<String[]> rawData = readFile.getRawData("FullData.csv");
