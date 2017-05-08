@@ -21,28 +21,31 @@ public class Team {
 
     public void printBestTeam(List<List<Player>> p, String a) {
         try {
-        BufferedWriter bw = new BufferedWriter(new FileWriter(new File(filename)));
-        for(List position: p)
-        {
-            List<Player> positions = position;
-            Collections.sort(position, new ByAttribute(a));
-            bw.write("Position: ");
-            bw.write(String.format("%-25s",positions.get(position.size() - 1).getPosition()));
-            bw.write("Name: ");
-            bw.write(String.format("%-26s",positions.get(position.size() - 1).getName()));
-            bw.write("Country of Origin: ");
-            bw.write(String.format("%-20s",positions.get(position.size() - 1).getNationality()));
+            BufferedWriter bw = new BufferedWriter(new FileWriter(new File(filename)));
+            bw.write("Here's the players sorted by " + a);
             bw.newLine();
-        }
-        bw.flush();
-        bw.close();
+            bw.newLine();
+            for(List position: p)
+            {
+                List<Player> positions = position;
+                Collections.sort(position, new ByAttribute(a));
+                bw.write("Position: ");
+                bw.write(String.format("%-25s",positions.get(position.size() - 1).getPosition()));
+                bw.write("Name: ");
+                bw.write(String.format("%-26s",positions.get(position.size() - 1).getName()));
+                bw.write("Country of Origin: ");
+                bw.write(String.format("%-20s",positions.get(position.size() - 1).getNationality()));
+                bw.newLine();
+            }
+            bw.flush();
+            bw.close();
         } catch (FileNotFoundException e) {
             System.out.println("Enter valid filename. If attribute is two words, type as one with no spaces");
         } catch (IOException e) {
             System.out.println("Enter valid filename. If attribute is two words, type as one with no spaces");
         }
 
-        }
+    }
     public Team(String f) {
         filename = f;
     }
